@@ -106,84 +106,84 @@ int main(){
             scanf("%d", &currType);
 
             if (currType == 1) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 1.0822;
                 printf("\nResult : %.2lf US$", conversion);
             }
 
             else if (currType == 2) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 1.48;
                 printf("\nResult : %.2lf CA$", conversion);
             }
 
             else if (currType == 3) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 168.45;
                 printf("\nResult : %.2lf JPY", conversion);
             }
 
             else if (currType == 4) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 0.9241;
                 printf("\nResult : %.2lf €", conversion);
             }
 
             else if (currType == 5) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 1.3576;
                 printf("\nResult : %.2lf CA$", conversion);
             }
 
             else if (currType == 6) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 151.5979;
                 printf("\nResult : %.2lf JPY", conversion);
             }
 
             else if (currType == 7) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr *  0.690071;
                 printf("\nResult : %.2lf €", conversion);
             }
 
             else if (currType == 8) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 0.7367;
                 printf("\nResult : %.2lf US$", conversion);
             }
 
             else if (currType == 9) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 158.2245;
                 printf("\nResult : %.2lf JPY", conversion);
             }
 
             else if (currType == 10) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 0.005899;
                 printf("\nResult : %.2lf €", conversion);
             }
 
             else if (currType == 11) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 0.00873;
                 printf("\nResult : %.2lf CA$", conversion);
             }
 
             else if (currType == 12) {
-                printf("Please enter your amount : \n");
+                printf("Please enter your amount : ");
                 scanf("%lf", &curr);
                 conversion = curr * 0.0064;
                 printf("\nResult : %.2lf US$", conversion);
@@ -198,7 +198,7 @@ int main(){
         }
 
 
-        if ((strcmp (usr_input, "Mass") == 0) || (strcmp (usr_input, "mass") == 0)) {
+        else if ((strcmp (usr_input, "Mass") == 0) || (strcmp (usr_input, "mass") == 0)) {
             
             int massType;
             double mass;
@@ -303,7 +303,7 @@ int main(){
 
         }
 
-        if ((strcmp (usr_input, "Temperature") == 0) || (strcmp (usr_input, "temperature") == 0)) {
+        else if ((strcmp (usr_input, "Temperature") == 0) || (strcmp (usr_input, "temperature") == 0) || (strcmp (usr_input, "temp") == 0)) {
             
             int tempType;
             double temp;
@@ -363,9 +363,10 @@ int main(){
                 }
 
             }
-        
+         else{
+            printf("\nIt looks like you've made a mistake, check your spelling, and try again !");
+        }
     }
-    
 
     else{
         printf("\nIt looks like you've made a mistake, check your spelling, and try again !");

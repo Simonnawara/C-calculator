@@ -1,7 +1,7 @@
 <h1>Simple Calculator</h1>
 
 <h2>Description</h2>
-This C program functions as a basic calculator, capable of performing a variety of arithmetic operations between two numbers. In addition, the user can calculate percentages, say for a tip, or convert units (Temperature / Mass / Currency)
+This C program functions as a basic calculator, capable of performing a variety of arithmetic operations between two numbers. In addition, the user can calculate percentages, say for a tip, or convert units (Temperature / Mass / Currency).
 <br />
 <br />
 

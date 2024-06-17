@@ -78,7 +78,7 @@ int main(){
     }
 
     else{
-        printf("\nIt looks like you've made a mistake, check your spelling, and try again :)");
+        printf("\nIt looks like you've made a mistake, check your spelling, and try again !");
     }
 
     return 0;

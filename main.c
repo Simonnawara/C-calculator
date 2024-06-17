@@ -205,7 +205,7 @@ int main(){
             double conversion;
            
             printf("\nWelcome to the mass side of the converter");
-            printf("\nPlease enter the number the number of the units you want to convert :");
+            printf("\nPlease enter the number of the units you want to convert :");
             printf("\n1. Kg to gr\n2. Kg to Oz\n3. Kg to Lbs");
             printf("\n4. gr to Kg\n5. gr to Oz\n6. gr to Lbs");
             printf("\n7. Oz to Kg\n8. Oz to gr\n9. Oz to Lbs");
@@ -220,84 +220,149 @@ int main(){
                 printf("\nResult : %.2lf gr", conversion);
             }
 
-            if (massType == 2) {
+            else if (massType == 2) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass * 35.274;
                 printf("\nResult : %.2lf Oz", conversion);
             }
 
-            if (massType == 3) {
+            else if (massType == 3) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass * 2.205;
                 printf("\nResult : %.2lf Lbs", conversion);
             }
 
-            if (massType == 4) {
+            else if (massType == 4) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass / 1000;
                 printf("\nResult : %.2lf Kg", conversion);
             }
 
-            if (massType == 5) {
+            else if (massType == 5) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass / 28.35;
                 printf("\nResult : %.2lf Oz", conversion);
             }
 
-            if (massType == 6) {
+            else if (massType == 6) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass / 453.6;
                 printf("\nResult : %.2lf Lbs", conversion);
             }
 
-            if (massType == 7) {
+            else if (massType == 7) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass /35.274;
                 printf("\nResult : %.2lf Kg", conversion);
             }
 
-            if (massType == 8) {
+            else if (massType == 8) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass * 28.35;
                 printf("\nResult : %.2lf gr", conversion);
             }
 
-            if (massType == 9) {
+            else if (massType == 9) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass / 16;
                 printf("\nResult : %.2lf Lbs", conversion);
             }
 
-            if (massType == 10) {
+            else if (massType == 10) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass / 2.205;
                 printf("\nResult : %.2lf Kg", conversion);
             }
 
-            if (massType == 11) {
+            else if (massType == 11) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass * 453.6;
                 printf("\nResult : %.2lf gr", conversion);
             }
 
-            if (massType == 12) {
+            else if (massType == 12) {
                 printf("Please enter your amount : \n");
                 scanf("%lf", &mass);
                 conversion = mass * 16;
                 printf("\nResult : %.2lf Oz", conversion);
             }
 
+            else {
+                printf("Try again, you might have made a spelling mistake !");
+            }
+
         }
+
+        if ((strcmp (usr_input, "Temperature") == 0) || (strcmp (usr_input, "temperature") == 0)) {
+            
+            int tempType;
+            double temp;
+            double conversion;
+           
+            printf("\nWelcome to the temperature side of the converter");
+            printf("\nPlease enter the number of the units you want to convert :");
+            printf("\n1. Celsius to Farenheight\n2. Celsius to Kelvin\n3. Farenheight to Celsius");
+            printf("\n4. Farenheight to Kelvin\n5. Kelvin to Celsius\n6. Kelvin to Farenheight");
+            printf("\n\n-> ");
+            scanf("%d", &tempType);
+
+              if (tempType == 1) {
+                printf("Please enter your amount : \n");
+                scanf("%lf", &temp);
+                conversion = (temp * 9/5) + 32;
+                printf("\nResult : %.2lf °F", conversion);
+                }
+
+                else if (tempType == 2) {
+                printf("Please enter your amount : \n");
+                scanf("%lf", &temp);
+                conversion = temp + 273.15;
+                printf("\nResult : %.2lf K", conversion);
+                }
+
+                else if (tempType == 3) {
+                printf("Please enter your amount : \n");
+                scanf("%lf", &temp);
+                conversion = (temp - 32) * 5/9;
+                printf("\nResult : %.2lf °C", conversion);
+                }
+
+                else if (tempType == 4) {
+                printf("Please enter your amount : \n");
+                scanf("%lf", &temp);
+                conversion = (temp - 32) * 5/9 + 273.15;
+                printf("\nResult : %.2lf K", conversion);
+                }
+
+                else if (tempType == 5) {
+                printf("Please enter your amount : \n");
+                scanf("%lf", &temp);
+                conversion = temp - 273.15;
+                printf("\nResult : %.2lf K", conversion);
+                }
+
+                else if (tempType == 6) {
+                printf("Please enter your amount : \n");
+                scanf("%lf", &temp);
+                conversion = (temp - 273.15) * 9/5 + 32;
+                printf("\nResult : %.2lf °F", conversion);
+                }
+
+                else {
+                printf("Try again, you might have made a spelling mistake !");
+                }
+
+            }
         
     }
     

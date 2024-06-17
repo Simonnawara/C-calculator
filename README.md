@@ -1,7 +1,13 @@
 <h1>Simple Calculator</h1>
 
 <h2>Description</h2>
-This C program functions as a basic calculator, capable of performing a variety of arithmetic operations between two numbers. It supports addition, subtraction, multiplication, division, exponentiation, and modulo operations. The program prompts the user to input an operator and two operands, then computes and displays the result of the operation.<br />
+This C program functions as a basic calculator, capable of performing a variety of arithmetic operations between two numbers. In addition, the user can calculate percentages, say for a tip, or convert units (Temperature / Mass / Currency)
+<br />
+<br />
+
+- For the basic calculator, the program prompts the user to input an operator and two operands, then computes and displays the result of the operation. It supports addition, subtraction, multiplication, division, exponentiation, and modulo operations<br />
+- For the percentage calculator, the program promtps the user to input the number they want to calculate the percentage of, then the actual percentage desired. Once done, the code computes the data received, and displays the result of the operation. <br />
+- For the converter unit, the program asks the user to choose between the 3 types mentioned above, then prompts the user to input which specific unit they want converted. Once done, the code computes the data received, and displays the result of the operation.
 <br />
 This simple calculator is a useful tool for quick arithmetic calculations and a great example for learning basic C programming, handling user input, and utilizing mathematical functions.<br />
 
